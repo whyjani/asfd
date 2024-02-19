@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    </style>
+</head>
+<body>
+    <div id="home-main">
+        <div id="cursor">
+            <div class="c-top-left"></div>
+            <div class="c-top-right"></div>
+            <div class="c-bottom-left"></div>
+            <div class="c-bottom-right"></div>
+        </div>
+
+        <!-- 3D LOADER  -->
+        <canvas id="canvas3d"></canvas>
+ 
+      <!-- DESK NAV SECTION START HERE  -->
+      <div id="desk-nav">
+          <div class="desk-nav-logo ch"><a href="#"><img src="Assets/LOGO/g14 1.svg" alt=""></a></div>
+          <div class="desk-nav-links ch">
+              <a href="#">HOME</a>
+              <a href="#">ABOUT</a>
+              <a href="#">WORK</a>
+              <a href="#">CAREERS</a>
+          </div>
+          <div class="desk-nav-btn ch"><a href="#">LET'S TALK</a></div>
+      </div>
+      <!-- DESK NAV SECTION END HERE  -->
+      
+      <!-- MOB NAV SECTION START HERE  -->
+      <!-- MENU CONTAINER  -->
+      <div id="mob-nav">
+  <div class="mob-nav-logo"><a href="#"><img src="Assets/LOGO/g14 1.svg" alt=""></a></div>
+  
+          <div class="mob-nav-base">
+              <a class="nav-lines"></a>
+              <a class="nav-lines"></a>
+          </div>        
+      </div>
+      <div class="mob-nav-container">
+          <div class="mob-nav-container-links">
+              <div class="link-wrap">
+                  <a href="#">HOME</a>
+              </div>
+              <div class="link-wrap">
+                  <a href="#">ABOUT</a>
+              </div>
+              <div class="link-wrap">
+                  <a href="#">WORK</a>
+              </div>
+              <div class="link-wrap">
+                  <a href="#">CAREER</a>
+              </div>
+              <div class="link-wrap">
+                  <a href="#"><span>LET'S TALK</span></a>
+              </div>
+          </div>
+      </div>
+      <!-- MOB NAV SECTION END HERE  -->
+
+       <!-- HOME SECTION ONE START HERE  -->
+       <div id="home-section-one-wrap">
+
+        <div class="home-s1-video">
+            <video 
+            preload="auto"
+            autoplay="autoplay" loop muted playsinline>
+                <source src="Assets/VIDEOS/web.webm" type="video/webm">
+            </video>
+            
+        </div>
+  
+        <!-- <div class="home-s1-heading-1"><h1>EZ KODE</h1></div> -->
+        <div class="home-s1-heading">
+            <div class="home-s1-h">
+                <h1>Transforming Ideas into <span>Digital Excellence</span></h1>
+            </div>
+
+    </div>
+</div>
+    <!-- HOME SECTION ONE END HERE  -->
+
+    <div id="home-section-two-wrap">
+        
+        <div class="home-s2-heading">
+            <h1>FUTURE FARWORD <br> <span>STRTRGY</span></h1>
+        </div>
+        
+        <div class="home-s2-boxs-wrap">
+            <div class="home-s2-boxs">
+                
+                <div class="home-s2-box-num"><p>01</p></div>
+                <div class="home-s2-box-title"><h4>DEFINE <br> GOALS</h4></div>
+                <div class="home-s2-box-des"><p>Understand project objectives and gather key details.</p></div>
+            </div>
+        <div class="home-s2-boxs">
+            
+            <div class="home-s2-box-num"><p>02</p></div>
+                    <div class="home-s2-box-title"><h4>PLAN <br> STRATEGY</h4></div>
+                    <div class="home-s2-box-des"><p>Create a focused strategy with careful planning.</p></div>
+        </div>
+        <div class="home-s2-boxs">
+            
+            <div class="home-s2-box-num"><p>03</p></div>
+                    <div class="home-s2-box-title"><h4>EXECUTE <br> PROJECT</h4></div>
+                    <div class="home-s2-box-des"><p>Bring the plan to life with strong execution.</p></div>
+                </div>
+                <div class="home-s2-boxs">
+                    
+                    <div class="home-s2-box-num"><p>04</p></div>
+                    <div class="home-s2-box-title"><h4>OPTIMIZE AND <br> DELIVER</h4></div>
+                    <div class="home-s2-box-des"><p>Fine-tune for effectiveness before final delivery.</p></div>
+                </div>
+        
+
+</div>
+
+<div id="pag"></div>
+    </div>
+    
+    
+              
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+<script src="https://unpkg.com/split-type"></script>
+<script src="script.js"></script>
+
+
+
+
+    <script type="module">
+      import { Application } from './runtime.js';
+      const canvas = document.getElementById('canvas3d');
+      const app = new Application(canvas);
+      app.load('./scene.splinecode');
+    </script>
+</body>
+</html>
